@@ -1,0 +1,67 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;   
+    width: 350px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+   
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+.x,
+.o {
+  background: white;
+  cursor: default;
+}
+
+.x:hover,
+.o:hover {
+  background: white;
+}
+.x:after,
+.o:after {
+  display: block;
+  width: 100%;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.x:after {
+  content: "x";
+}
+
+.o:after {
+  content: "o";
+}
+
+.game-over li {
+  color: red;
+  cursor: default;
+  background: white;
+}
+
+.winner-x .x,
+.winner-o .o {
+  background: green;
+  color: white;
+}
+
+figcaption {
+  font-size: 30px;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
