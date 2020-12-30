@@ -1,0 +1,1 @@
+$((()=>{const n=$(".hanoi"),a=new HanoiGame;new HanoiView(a,n)}));
